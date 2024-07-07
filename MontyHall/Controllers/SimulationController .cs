@@ -8,9 +8,9 @@ namespace MontyHall.Controllers
     [Route("[controller]")]
     public class SimulationController : Controller
     {
-        private readonly MontyHallSimulationService _simulationService;
+        private readonly IMontyHallSimulationService _simulationService;
         
-        public SimulationController(MontyHallSimulationService simulationService)
+        public SimulationController(IMontyHallSimulationService simulationService)
         {
             _simulationService = simulationService;
         }
