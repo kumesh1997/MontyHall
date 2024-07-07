@@ -9,7 +9,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddSingleton<MontyHallSimulationService>();
+builder.Services.AddSingleton<IMontyHallSimulationService,MontyHallSimulationService>();
 
 var app = builder.Build();
 
